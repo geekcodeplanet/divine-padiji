@@ -98,8 +98,6 @@ body {
   padding: 0px;
 }
 #ok {
-  margin: auto;
-
   text-align: center;
 }
 .card {
@@ -152,4 +150,56 @@ body {
 }
 .mt-50 {
   margin-top: 50px;
+}
+.slide-image {
+  display: inline;
+}
+@media only screen and (max-width: 600px) {
+  br {
+    display: flex;
+  }
+  .slide-image {
+    display: none;
+  }
+  h1 {
+    font-size: 1em;
+  }
+  .catchy {
+    font-size: 1em;
+  }
+  .card {
+    margin: 0px;
+  }
+  .slide {
+    padding: 50px 2px 50px 2px;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+  }
+  .menu span {
+    padding: 10px 6px 10px 6px;
+    color: rgb(109, 39, 173);
+  }
+  .active span {
+    background: rgb(109, 39, 173);
+    color: white;
+  }
+  .products {
+    background: white;
+    border-radius: 6px;
+    margin: 2px;
+
+    box-shadow: 2px 2px 5px grey;
+    overflow: hidden;
+    width: auto;
+    min-width: 150px;
+  }
+  .products img {
+    width: 50% !important;
+    height: 50% !important;
+  }
 }
